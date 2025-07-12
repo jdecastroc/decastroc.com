@@ -10,7 +10,9 @@ export const iconLink = style({
 export const footer = style({
   display: 'flex',
   justifyContent: 'space-between',
-  flexDirection: 'row',
+  flexDirection: 'column',
+  alignItems: 'center',
+  padding: '0 20px'
 });
 
 export const left = style({
@@ -21,6 +23,7 @@ export const social = style({
   display: 'flex',
   gap: '1rem',
   alignItems: 'center',
+  marginTop: vars.spacing.sm
 });
 
 export const icon = style({
