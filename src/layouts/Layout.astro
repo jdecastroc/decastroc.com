@@ -1,0 +1,21 @@
+---
+import Header from '../components/Header.astro';
+import { themeClass } from '../styles/theme.css';
+import BaseHead from '../components/BaseHead.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import '../styles/globalStyles.css.ts';
+import Footer from '../components/Footer.astro';
+
+---
+
+<!DOCTYPE html>
+<html lang="en" class={themeClass}>
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body class="root">
+    <Header />
+    <slot />
+    <Footer />
+  </body>
+</html>
