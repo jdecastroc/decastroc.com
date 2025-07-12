@@ -1,10 +1,12 @@
 ---
 import * as styles from '../styles/header.css.ts';
+import BonsaiImage from '../assets/bonsai.png';
+import { Image } from 'astro:assets';
 ---
 
 <header class={styles.header}>
 	<div class={styles.logo}>
-		<img src="/src/assets/bonsai.png" alt="Bonsai Tree" class={styles.bonsai} />
+		<Image width={48} height={48} src={BonsaiImage} alt='bonsai logo' />
 		<a href="/" class={styles.siteTitle}>Garden of Thought</a>
 	</div>
 	<nav class={styles.nav}>
